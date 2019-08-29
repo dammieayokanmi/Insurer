@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Insurance Application</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nunito|Nunito+Sans|Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../insure/css/dropdown.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nunito|Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../insure/css/insure.css" />
+    <link rel="icon" type="image/jpg" href="./images/brand.png" />
+  </head>
+  <body>
+    <main>
+      <nav class="flex">
+        <div class="flex container">
+          <div class="brand flex">
+            <a href=""><img src="./images/brand.png" alt=""/></a>
+          </div>
+
+          <div class="options flex">
+            <ul class="flex">
+              <li><a href="">Dashboard</a></li>
+              <li><a href="">Buy Insurance</a></li>
+              <li><a href="">Account Settings</a></li>
+            </ul>
+          </div>
+
+          <div class="user_account flex ">
+            <a onclick="myFunction()" class="dropbtn flex">
+              <img src="./images/user.png" alt="" />
+              <span>Lois Durello</span>
+              <img id="arrow" src="./images/arrow.png" alt="" />
+            </a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#AS" id="AS">Account Settings</a>
+              <a href="#SO">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="container">
+        <h3>Welcome, Lois!</h3>
+        <p id="spanDate"></p>
+        <div class="cards">
+          <div class="cards1 card">
+            <div class="card_content">
+              <img src="./images/bought.png" alt="" />
+              <div class="label">
+                <h4>06</h4>
+                <p>Total Insurance Bought</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards2 card">
+            <div class="card_content">
+              <img src="./images/amount.png" alt="" />
+              <div class="label">
+                <h4>₦21,400,000</h4>
+                <p>Total Amount of Insurance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards3 card">
+            <div class="card_content">
+              <img src="./images/claim.png" alt="" />
+              <div class="label">
+                <h4>03</h4>
+                <p>Total Insurance Claims</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards4 card">
+            <div class="card_content">
+              <img src="./images/claim.png" alt="" />
+              <div class="label">
+                <h4>₦1,400,000</h4>
+                <p>Total Amount of Claims</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="">
+        <div class="Insurance_app ">
+          <h5>Insurance Applications</h5>
+          <hr />
+          <div class="Insurance_app_table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col1">SN</th>
+                  <th>Insurance Type</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col1">1</td>
+                  <td>Motor Insurance</td>
+                  <td>₦21,400,000</td>
+                  <td class="date"></td>
+                  <td><span class="completed">• Completed</span></td>
+                  <td><button type="submit">Make a Claim</button></td>
+                  <td>
+                    <div class="dropdown2">
+                      More Actions
+                      <div class="dropdown2-content">
+                        <ul>
+                          <li><a id="first-child" href="">Veiw Policy</a></li>
+                          <hr />
+                          <li><a href="">Make a Claim</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col1">2</td>
+                  <td>Travel Insurance</td>
+                  <td>₦21,400,000</td>
+                  <td class="date"></td>
+                  <td><span class="completed">• Completed</span></td>
+                  <td><button type="submit">Make a Claim</button></td>
+                  <td>
+                    <div class="dropdown2">
+                      More Actions
+                      <div class="dropdown2-content">
+                        <ul>
+                          <li><a id="first-child" href="">Veiw Policy</a></li>
+                          <hr />
+                          <li><a href="">Make a Claim</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col1">3</td>
+                  <td>Life Insurance</td>
+                  <td>₦21,400,000</td>
+                  <td class="date"></td>
+                  <td><span class="incomplete">• Incomplete</span></td>
+                  <td><button type="submit">Complete Process</button></td>
+                  <td>
+                    <div class="dropdown2">
+                      More Actions
+                      <div class="dropdown2-content">
+                        <ul>
+                          <li><a id="first-child" href="">Veiw Policy</a></li>
+                          <hr />
+                          <li><a href="">Make a Claim</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col1">4</td>
+                  <td>Health Insurance</td>
+                  <td>₦21,400,000</td>
+                  <td class="date"></td>
+                  <td><span class="incomplete">• Incomplete</span></td>
+                  <td><button type="submit">Complete Process</button></td>
+                  <td>
+                    <div class="dropdown2">
+                      More Actions
+                      <div class="dropdown2-content">
+                        <ul>
+                          <li><a id="first-child" href="">Veiw Policy</a></li>
+                          <hr />
+                          <li><a href="">Make a Claim</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="col1">5</td>
+                  <td>Third Party Motor Insurance</td>
+                  <td>₦21,400,000</td>
+                  <td class="date"></td>
+                  <td><span class="completed">• Completed</span></td>
+                  <td><button type="submit">Make a Claim</button></td>
+                  <td>
+                    <div class="dropdown2">
+                      More Actions
+                      <div class="dropdown2-content">
+                        <ul>
+                          <li><a id="first-child" href="">Veiw Policy</a></li>
+                          <hr />
+                          <li><a href="">Make a Claim</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./insure.js"></script>
+  </body>
+</html>

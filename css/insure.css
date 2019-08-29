@@ -1,0 +1,266 @@
+body {
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfd;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+.flex {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+nav {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 72px;
+}
+.container {
+  padding: 0px 16px;
+  width: 88%;
+  margin: auto;
+}
+.options li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  margin-right: 8px;
+  margin-left: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #240700;
+}
+ul.flex li:nth-child(3) a {
+  color: #737373;
+}
+ul.flex li:nth-child(1) a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+ul.flex li:nth-child(3) a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+ul.flex li:nth-child(2) a {
+  color: rgba(0, 0, 0, 0.5);
+}
+ul.flex li:nth-child(2) a:hover {
+  color: #737373;
+}
+.brand {
+  padding-top: 3px;
+  margin-right: 16px;
+}
+.user_account {
+  align-content: center;
+  margin-left: auto;
+}
+.user_account > a {
+  padding: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.user_account span {
+  margin-left: 8px;
+  margin-right: 4px;
+}
+#arrow {
+  width: 10px;
+  height: 5.83px;
+}
+
+/* header */
+header.container {
+  padding-top: 24px;
+  margin-top: 16px;
+}
+
+header.container > h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #212529;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+header.container > p {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #737373;
+  line-height: 14px;
+}
+
+.cards {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 4px;
+  flex-basis: 23%;
+  background-color: #fff;
+  margin: 8px 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.card_content {
+  padding: 25px 30px 0px 30px;
+}
+.card_content > img {
+  margin-top: 8px;
+}
+.label {
+  margin: 10px 0 0 0;
+}
+.label > h4 {
+  margin-bottom: 8px;
+  color: #4d0032;
+  font-size: 32px;
+  font-family: "Nunito", sans-serif;
+}
+.label > p {
+  font-size: 15px;
+  color: #212529;
+  margin-bottom: 25px;
+}
+
+.cards1 {
+  background-image: url("images/insurance\ shield.svg");
+}
+.cards2 {
+  background-image: url("images/total\ amount\ svg..svg");
+}
+.cards3 {
+  background-image: url("images/insurance\ claim.svg");
+}
+.cards4 {
+  background-image: url("images/icon.svg");
+}
+
+section {
+  margin: auto;
+  margin: 48px auto 80px auto;
+  background-color: #fff;
+  width: 86%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: x;
+}
+.Insurance_app > h5 {
+  color: #4d0032;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  margin: 16px 24px;
+}
+
+section hr {
+  margin: 0 24px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  /* text-align: center; */
+  border: 0;
+  /* margin-left: auto; */
+  border-collapse: collapse;
+  /* padding-left: 20px; */
+}
+table th {
+  color: #737373;
+  font-weight: 400;
+  text-align: left !important;
+  font-size: 14px;
+  line-height: 15px;
+  vertical-align: middle;
+  padding: 20px 12px 20px 10px;
+}
+tbody {
+  width: 80%;
+}
+tbody > tr:nth-child(odd) {
+  /* background: red; */
+  background: #f8f7f6;
+}
+tbody > tr:nth-child(even):hover {
+  background-color: rgba(0, 0, 0, 0.075);
+  transition: 0.1s;
+}
+
+.col1 {
+  padding: 12px 12px 12px 24px;
+}
+td {
+  padding: 12px 25px 12px 12px;
+  color: #240f00;
+  font-size: 14px;
+  font-weight: bold;
+}
+.completed {
+  background: rgba(106, 221, 14, 0.2);
+  border-radius: 2px;
+  color: #6add0e;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.incomplete {
+  font-weight: normal;
+  padding: 5px 15px;
+  background: rgba(253, 82, 98, 0.2);
+  border-radius: 2px;
+  color: #fd5262;
+  font-size: 12px;
+}
+td > button {
+  background: #f58634;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  width: 136px;
+  height: 30px;
+  cursor: pointer;
+}
+td > button:hover {
+  background-color: #fff;
+  color: #f58634;
+  transition: 0.2s;
+}
